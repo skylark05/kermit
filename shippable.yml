@@ -3,6 +3,12 @@ pipelines:
     steps:
       - name: stepOne
         type: bash
+        setup:
+          runtime:
+            type: auto
+            image:
+              auto:
+                language: none
         execution:
           onExecute:
             - echo "Hello, World!"
