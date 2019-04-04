@@ -3,6 +3,8 @@ pipelines:
     steps:
       - name: stepOne
         type: bash
+        configuration:
+          cache: false
         setup:
           runtime:
             type: auto
