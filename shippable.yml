@@ -1,0 +1,8 @@
+pipelines:
+  - name: pipeOne
+    steps:
+      - name: stepOne
+        type: bash
+        execution:
+          onExecute:
+            - echo "Hello, World!"
